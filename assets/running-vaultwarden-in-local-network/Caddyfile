@@ -1,0 +1,19 @@
+{$DOMAIN}:443 {
+  log {
+    output file /data/access.log {
+      roll_size 10MB
+      roll_keep 10
+    }
+  }
+
+  tls {
+    dns cloudflare {$CLOUDFLARE_API_TOKEN}
+  }
+
+  encode gzip
+
+  reverse_proxy /notifications/hub vaultwarden:3012
+  reverse_proxy vaultwarden:80 {
+    header_up X-Real-IP {remote_host}
+  }
+}

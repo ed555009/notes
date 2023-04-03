@@ -1,0 +1,29 @@
+---
+
+services:
+  vaultwarden:
+    image: vaultwarden/server:1.28.0-alpine
+    container_name: vaultwarden
+    restart: unless-stopped
+    environment:
+      - ADMIN_TOKEN=THE_ADMIN_TOKEN # The admin token to use for administration tasks.
+      - WEBSOCKET_ENABLED=true # Enable WebSocket notifications.
+    volumes:
+      - //d/vaultwarden/data:/data
+
+  caddy:
+    image: caddy:2.6.4-alpine-cf
+    container_name: caddy
+    restart: unless-stopped
+    environment:
+      - DOMAIN=THE_DOMAIN_NAME_TO_USE
+      - EMAIL=THE_EMAIL_TO_USE
+      - CLOUDFLARE_API_TOKEN=THE_CLOUDFLARE_API_TOKEN
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - //d/docker/vaultwarden/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - //d/docker/vaultwarden/caddy/config:/config
+      - //d/docker/vaultwarden/caddy/data:/data
+...

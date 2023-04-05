@@ -12,7 +12,7 @@ yum update
 sudo yum update -y
 ```
 
-## Software
+## Packages
 
 ### Git
 

@@ -2,3 +2,4 @@
 - [Running Vaultwarden in local network](running-vaultwarden-in-local-network/README.md)
 - [SSL Conversion](ssl-conversion/README.md)
 - [Steps to setup Azure agent](steps-to-setup-azure-agent/README.md)
+- [NET6 DateOnly Json Serialize](net6-dateonly-json-serialize/README.md)

@@ -18,7 +18,6 @@ sudo yum update -y
 
 ```sh
 sudo yum install git
-
 ```
 
 ### Docker

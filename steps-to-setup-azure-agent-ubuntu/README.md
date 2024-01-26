@@ -55,6 +55,14 @@ sudo apt update
 sudo apt install openjdk-11-jdk
 ```
 
+From `sonarqube9.1`, Java `17` is required.
+
+```sh
+sudo apt update
+
+sudo apt install openjdk-17-jdk
+```
+
 Check
 
 ```sh

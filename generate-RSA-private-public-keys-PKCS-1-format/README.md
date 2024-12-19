@@ -14,6 +14,14 @@ openssl genrsa -out private.key 2048
 -----END RSA PRIVATE KEY-----
 ```
 
+#### Convert PKCS#8 to PKCS#1
+
+If the generated private key is in PKCS#8 format, convert it to PKCS#1 format using the following command:
+
+```sh
+openssl rsa -in private_pkcs8.pem -out private_pkcs1.pem -traditional
+```
+
 ## Generate public key from private key
 
 ```sh

@@ -3,7 +3,7 @@
 ## Generate private key
 
 ```sh
-openssl genrsa -out private.key 2048
+openssl genrsa -traditional -out private.key 2048
 ```
 
 #### Sample

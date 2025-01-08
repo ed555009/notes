@@ -8,31 +8,31 @@
 
 ### Generate diff
 
+***Note: Add `diff.txt` to `.gitignore` so it will not be checked in commit.***
+
 ```sh
 git diff > diff.txt
 ```
 
 ### Ask copilot to generating commit message
 
-1. Select the `diff.txt` file in `Source Control` tab in VSCode.
+1. Open `diff.txt` in editor.
 
-2. open `Copilot Chat`, make sure the `Current file context` is `diff.txt`.
+2. Open `Copilot Chat`, make sure the `Current file context` is `diff.txt`.
 
 3. Type the following message in the chat window:
 
 ```plaintext
-write commit message base on this file, follow the AngularJS Git Commit Message Conventions without <scope> and 50/72 rule, capitalize subject
+write commit message base on this file, follow the AngularJS Git Commit Message Conventions without <scope> and 50/72 rule, capitalize subject, use list style in description when needed
 ```
 
 4. Check/Edit the generated commit message in the chat window.
 
-5. Delete the `diff.txt` file before hitting the commit button in the `Source Control` tab.
+5. Left `Message` field empty and click the `Commit` button, this will open the `Commit Message` window.
 
-6. Left `Message` field empty and click the `Commit` button, this will open the `Commit Message` window.
+6. Paste the generated commit message in the `Commit Message` window.
 
-7. Paste the generated commit message in the `Commit Message` window.
-
-8. Save and close the `Commit Message` window.
+7. Save and close the `Commit Message` window.
 
 ## References
 

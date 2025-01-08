@@ -9,3 +9,4 @@
 - [NET6 DateOnly Json Serialize](net6-dateonly-json-serialize/README.md)
 - [Custom aws-for-fluent-bit image for nginx](custom-aws-for-fluent-bit-image-for-nginx/README.md)
 - [Generate self-signed certificate for digital signature](generate-self-signed-certificate-for-digital-signature/README.md)
+- [Improving commit message quality in VSCode with Copilot](improving-commit-message-quality-in-vscode-with-copilot/README.md)

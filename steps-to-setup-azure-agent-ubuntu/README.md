@@ -103,9 +103,7 @@ Finally, follow the [official guide](https://learn.microsoft.com/en-us/azure/dev
 Install
 
 ```sh
-sudo apt update
-
-sudo apt install awscli
+sudo snap install aws-cli --classic
 ```
 
 Check

@@ -103,7 +103,7 @@ Finally, follow the [official guide](https://learn.microsoft.com/en-us/azure/dev
 Install
 
 ```sh
-snap install aws-cli --classic
+sudo snap install aws-cli --classic
 ```
 
 Check
